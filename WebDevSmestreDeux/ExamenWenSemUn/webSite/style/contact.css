@@ -1,0 +1,86 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin:0;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+ul{
+  list-style: none;
+}
+.list_header li{
+  display: inline-block;
+}
+.list-footer li{
+  display: block; 
+}
+main{
+  display: grid;
+  height: 100vh;
+  grid-template-columns:repeat(12,1fr);
+  grid-template-rows: 100px 50px auto 120px 20px;
+  grid-template-areas: "entete entete entete entete entete entete entete entete entete entete entete entete"
+  "nav nav nav nav nav nav nav nav nav nav nav nav"            
+  "formu formu formu formu formu formu formu formu formu formu formu formu "
+  "foot foot foot foot foot foot foot foot foot foot foot foot"
+  "cori cori cori cori cori cori cori cori cori cori cori cori";
+  justify-content: center;
+}
+header{
+  grid-area: entete;
+  background-image: url(../images/images.jpeg);
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+}
+nav{
+  grid-area: nav;
+  background-color:#eee;
+  position: flex;
+}
+h1{
+width: 70%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+text-align: center;
+}
+nav ul{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+nav ul li{
+padding-top: 15px;
+padding-left: 50px;
+padding-right: 50px;
+margin-left: 50px;
+margin-right: 50px;
+}
+#copyright{
+grid-area: cori;
+text-align: center;
+}
+footer{
+background-color: rgb(159, 129, 188);
+grid-area: foot;
+display: flex;
+}
+footer div{
+margin-left: 10px;
+}
+footer ul{
+margin-left: 50px;
+}
+form{
+  grid-area: formu;
+  width: 70%;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto ;
+  display: flex;
+  flex-direction: column;
+  }
