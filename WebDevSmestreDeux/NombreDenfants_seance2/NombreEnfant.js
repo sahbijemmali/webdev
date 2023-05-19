@@ -1,5 +1,5 @@
 function getNum() {
-  input = document.getElementById("nbr-enfs").value;
+  var input = document.getElementById("nbr-enfs");
   var formulaire = document.forms[0];
 
   // valider les entree
@@ -13,7 +13,7 @@ function getNum() {
     console.log(input);
     console.log(formulaire);
   } else {
-    for (let index = 1; index <= input; index++) {
+    for (let index = 1; index <= input.value; index++) {
       let sousformDiv = document.createElement("div");
       let sousformLabel = document.createElement("label");
       let sousformInput = document.createElement("input");
@@ -23,5 +23,6 @@ function getNum() {
       sousformDiv.appendChild(sousformInput);
       formulaire.appendChild(sousformDiv);
     }
+    input.setAttribute("disabled","");
   }
 }
