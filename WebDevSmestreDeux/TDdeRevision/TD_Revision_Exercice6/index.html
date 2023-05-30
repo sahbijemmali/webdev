@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <h1>Jeu TTcash</h1>
+    <div>Determiner un chiffre de 4 digits</div>
+    <div><p>Enter votre essai :</p></div>
+    <div class="proposition">
+      <input type="number" min="0" max="9" />
+      <input type="number" min="0" max="9" />
+      <input type="number" min="0" max="9" />
+      <input type="number" min="0" max="9" />
+    </div>
+    <hr />
+    <div><p>Historiques</p></div>
+    <div id="resulta"></div>
+    <div id="commande">
+      <button id="btn-verif" onclick="verifier()">Vérifier</button>
+      <button id="btn-essai" onclick="nouveauEssai()">Nouveau essai</button>
+    </div>
+    <hr />
+    <div>
+      <button onclick="nouveauJeu()">Nouveau Jeux</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
