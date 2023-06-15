@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <p>si le dé donne 6 , le lapin gagne , sinon la tortue avance pas</p>
+    <h2>lancer le dé , cliquer sur image</h2>
+    <div>
+      <img onclick="lanceDe()" src="images/de.jpg" alt="" />
+    </div>
+    <div id="container-lapin">
+      <div id="path-lapin">
+        <div>
+          <img src="images/lapin.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div id="container-tortue">
+      <div id="path-tortue">
+        <div>
+          <img src="images/tortue.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <button onclick="newGame()">jouer de nouveau</button>
+  </body>
+  <script src="script.js"></script>
+</html>
