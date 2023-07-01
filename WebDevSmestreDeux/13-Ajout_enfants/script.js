@@ -16,6 +16,7 @@ function ListerEnfants() {
     filedKids.appendChild(listBoys);
     elementBoy.appendChild(labelNom);
     elementBoy.appendChild(nom);
+    labelNom.classList.add("garcon");
     labelNom.innerText = `Garcon  ${index + 1} : `;
   }
   for (let index = 0; index < girlNumber; index++) {
@@ -26,6 +27,7 @@ function ListerEnfants() {
     filedKids.appendChild(listGirls);
     elementGirl.appendChild(labelNomG);
     elementGirl.appendChild(nomG);
+    labelNomG.classList.add("fille");
     labelNomG.innerText = `Fille  ${index + 1} : `;
   }
 
